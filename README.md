@@ -1,4 +1,3 @@
-{::options auto_ids="false" /}
 # Debug
 
 ## JS
