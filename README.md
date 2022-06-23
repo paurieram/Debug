@@ -19,7 +19,12 @@ error: function(jqXHR, textStatus, errorThrown){
 
 
 > empty querry
-> 
+
+> ```Argument 1 passed to Symfony\\Component\\HttpFoundation\\Response::setContent() must be of the type string or null, object given, called in
+> C:\\laragon\\www\\Ginepop\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php on line 72"```
+```php
+return categories::where('state', '0');
+```
 ```php
 return categories::where('state', '0')->get();
 ```
