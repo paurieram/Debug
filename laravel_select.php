@@ -1,0 +1,1 @@
+return categories::where('state', '0')->get();
