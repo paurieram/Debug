@@ -4,12 +4,42 @@
 
 ### Ajax
 
-empty response
-> 
+- #### Empty response
+
+> SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+Not working
 ```js
-$.ajax({},
-error: function(jqXHR, textStatus, errorThrown){
-    alert(errorThrown);
+$.ajax({
+    type: "get",
+    url: "/url",
+    dataType: "json",
+    success: function (response) {
+    }
+});
+```
+Working
+```js
+$.ajax({
+    type: "get",
+    url: "/url",
+    dataType: "text",
+    success: function (response) {
+    }
+});
+```
+
+- #### View response errors
+
+```js
+$.ajax({
+    type: "get",
+    url: "/url",
+    dataType: "text",
+    success: function (response) {
+    },
+    error: function(jqXHR, textStatus, errorThrown){
+        alert(errorThrown);
+    }
 });
 ```
 
@@ -18,10 +48,9 @@ error: function(jqXHR, textStatus, errorThrown){
 ### Laravel
 
 
-#### Error: Empty querry
+- #### Error: Empty querry
 
-> Argument 1 passed to Symfony\\Component\\HttpFoundation\\Response::setContent() must be of the type string or null, object given, called in
-> C:\\laragon\\www\\Ginepop\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php on line 72"
+> Argument 1 passed to Symfony\\Component\\HttpFoundation\\Response::setContent() must be of the type string or null, object given, called in C:\\laragon\\www\\Ginepop\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php on line 72"
 
 Not working
 ```php
