@@ -52,7 +52,7 @@
 
 >- #### Error: Empty querry
 >
->> Argument 1 passed to Symfony\\Component\\HttpFoundation\\Response::setContent() must be of the type string or null, object given, called in >C:\\laragon\\www\\Ginepop\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php on line 72"
+>> Argument 1 passed to Symfony\\Component\\HttpFoundation\\Response::setContent() must be of the type string or null, object given, called in C:\\laragon\\www\\Ginepop\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php on line 72"
 >
 >>Not working
 >>```php
@@ -62,4 +62,16 @@
 >>Working
 >>```php
 >>return categories::where('state', '0')->get();
+>>```
+
+>- #### Error: Not getting relationships
+>
+>>Not working
+>>```php
+>>return items::all();
+>>```
+>
+>>Working
+>>```php
+>>return items::with('imatges')->get();
 >>```
