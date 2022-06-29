@@ -75,3 +75,17 @@
 >>```php
 >>return items::with('imatges')->get();
 >>```
+
+>- #### Error: Not Getting a properity
+>
+>>Property [profile_photo_path] does not exist on this collection instance. (View: C:\laragon\www\Ginepop\resources\views\items-view.blade.php) 
+>
+>>Not working
+>>```php
+>>return view('items-view', ['usr'=>user::where('id', $item->id_seller)->get()]);
+>>```
+>
+>>Working
+>>```php
+>>return view('items-view', ['usr'=>user::where('id', $item->id_seller)->get()[0]]);
+>>```
