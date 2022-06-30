@@ -1,14 +1,13 @@
 # Debug
 
-### [JS](#js-1)
+>### [JS](#js-1)
+>
+>- #### [AJAX](#ajax-1)
+>
+>### [PHP](#php-1)
+>
+>- ### [LARAVEL](#laravel-1)
 
-- #### [Ajax](#ajax-1)
-
-### [PHP](#php-1)
-
-- ### [LARAVEL](#laravel-1)
-
----
 
 ## JS
 
