@@ -2,11 +2,11 @@
 
 ### [JS](#js-1)
 
-#### [Ajax](#ajax-1)
+- #### [Ajax](#ajax-1)
 
 ### [PHP](#php-1)
 
-### [LARAVEL](#laravel-1)
+- ### [LARAVEL](#laravel-1)
 
 ---
 
