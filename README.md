@@ -1,5 +1,15 @@
 # Debug
 
+## [JS](#js)
+
+### [Ajax](#ajax)
+
+## [PHP](#php)
+
+## [LARAVEL](#laravel)
+
+---
+
 ## JS
 
 ### Ajax
